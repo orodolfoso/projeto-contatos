@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-    background-color: aqua;
+    background-color: rgb(62, 58, 128);
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -14,7 +14,7 @@ body {
 }
 
 .main-title {
-    color: #385555;
+    color: #fff;
 }
 
 .list-wrapper {
@@ -25,4 +25,58 @@ body {
     overflow-y: auto;
     border-radius: 5px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+}
+
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding: 16px;
+}
+
+.list-item:hover {
+    background-color: #b8caca;
+}
+
+
+.list-item__imagem img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.list-item__content {
+    padding: 0 20px;
+    flex-grow: 1;
+}
+
+.list-item__name {
+    font-size: 20px;
+    color: #385555;
+    margin: 0;
+}
+
+.list-item__email {
+    margin: 5px 0 0;
+    color: #6e6a6a;
+}
+
+.list-item__action {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    opacity: 0;
+}
+
+.list-item:hover .list-item__action {
+    opacity: .3;
+}
+
+.list-item__action i {
+    color: #385555;
 }
